@@ -1,0 +1,24 @@
+[package]
+name = "systemic" # This is the package name
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ssh2 = "0.9"
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+colored = "2.0"
+clap = { version = "4.1", features = ["derive"] }
+csv = "1.1"
+prettytable = "0.10"
+
+
+# Specify the binary name
+[[bin]]
+name = "syntemic"
+path = "src/main.rs"

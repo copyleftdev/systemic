@@ -1,0 +1,7 @@
+{
+    "groups": {
+        "dev": ["ligma"],
+        "prod": ["ligma"],
+        "test": ["ligma"]
+    }
+}
